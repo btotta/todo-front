@@ -7,6 +7,7 @@ COPY package-lock.json .
 COPY vite.config.js .
 
 RUN npm install --include=dev
+RUN npm install vite -g
 
 COPY . .
 
