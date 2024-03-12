@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: todo-front
     environment:
       - NODE_ENV=production
     volumes:
