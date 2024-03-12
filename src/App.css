@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 100%;
+  text-align: right; /* Alinha o texto dos botões à esquerda */
+}
+
+.sidebar button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 25%;
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.todo-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 8px; /* Ajuste conforme necessário */
+  text-align: center; /* Alinha horizontalmente o conteúdo */
+}
+
+.todo-table th {
+  background-color: #d4d0d0cc; /* Cor de fundo do cabeçalho */
+}
+
+.todo-table th,
+.todo-table td {
+  border: 1px solid #ddd; /* Adiciona bordas às células */
+}
+
+.todo-table th {
+  vertical-align: middle; /* Alinha verticalmente o conteúdo do cabeçalho */
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-form label > span {
+  width: 100px; /* Defina a largura desejada para os rótulos */
+}
+
+.todo-form label > input {
+  flex-grow: 1;
+}
+
+.todo-form label > input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.todo-form button {
+  margin-top: 10px;
+}
