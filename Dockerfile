@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:21
 
 WORKDIR /app
 
@@ -6,8 +6,7 @@ COPY package.json .
 COPY package-lock.json .
 COPY vite.config.js .
 
-RUN npm install
-RUN npm install -g vite
+RUN npm install --include=dev
 
 COPY . .
 
