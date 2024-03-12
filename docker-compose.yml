@@ -5,16 +5,17 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: todo-front
+    restart: unless-stopped
     environment:
       - NODE_ENV=development
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     ports:
-      - "3000:3000"
+      - "3000"
     networks:
       - internal
 
 networks:
   internal:
-    driver: bridge
+    external: true
