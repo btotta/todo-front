@@ -3,6 +3,8 @@ FROM node:18
 WORKDIR /app
 
 COPY package.json .
+COPY package-lock.json .
+COPY vite.config.js .
 
 RUN npm install
 RUN npm install -g vite
